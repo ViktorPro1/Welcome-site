@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Вітання</title>
+</head>
+<body style="font-family: Arial; text-align: center; margin-top: 100px;">
+    <h1>Привіт! Як тебе звати?</h1>
+    <form method="POST">
+        <input type="text" name="username" placeholder="Введи ім’я">
+        <button type="submit">Вітати</button>
+    </form>
+
+    {% if name %}
+        <h2>Привіт, {{ name }}! 👋</h2>
+    {% endif %}
+</body>
+</html>
+
